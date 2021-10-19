@@ -31,8 +31,4 @@ $matches = [
 for($i = 0; $i < count($matches); $i++) {
     echo $matches[$i]["home"] . ' - ' . $matches[$i]["visiting"] . ' | ' . $matches[$i]["homeScore"] . ' - ' . $matches[$i]["visitingScore"] . '<br>';
 };
-
-
-
-
 ?>
