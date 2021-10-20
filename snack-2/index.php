@@ -11,9 +11,17 @@ if(!empty($_GET['name']) && !empty($_GET['age']) && !empty($_GET['email'])) {
     if(strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age) == "integer"){
         echo 'Accesso riuscito.';
     } else {
-        echo 'Accesso negato.';
+        echo 'Accesso negato. ';
     }
 } else {
     echo "Devi inserire i parametri name, age e email nell'URL.";
 };
+
+if( strlen($name) <= 3) {
+    echo "Il nome deve contenere almeno 4 caratteri.";
+} elseif(strpos($email, '@') == false || strpos($email, '.') == false) {
+    echo "L'email è formattata male.";
+} elseif (is_numeric($age) != "integer") {
+    echo "L'età deve essere un numero";
+}
 ?>
