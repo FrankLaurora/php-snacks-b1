@@ -50,8 +50,9 @@ $posts = [
         <title>Document</title>
     </head>
     <body>
+        <h1>Blog</h1>
         <?php foreach($posts as $date => $array) {?>
-            <h3><?= $date; ?></h3>
+            <h2><?= $date; ?></h2>
             <ul>
                 <?php foreach($array as $post) {?>
                     <li>
