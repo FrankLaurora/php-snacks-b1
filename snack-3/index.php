@@ -54,25 +54,17 @@ $posts = [
             <h3><?= $date; ?></h3>
             <ul>
                 <?php foreach($array as $post) {?>
-                    <?php foreach($post as $key => $value) { ?>
-                        <li>
-                            <?php if($key == 'title') { ?>
-                            <h3>
-                                <?php echo $value ?>
-                            </h3>
-                            <?php } ?>
-                            <?php if($key == 'author') { ?>
-                            <h4><em>
-                                <?php echo $value ?>
-                            </em></h4>
-                            <?php } ?>
-                            <?php if($key == 'text') { ?>
-                            <p>
-                                <?php echo $value ?>
-                            </p>
-                            <?php } ?>
+                    <li>
+                        <h3>
+                            <?php echo $post['title'] ?>
+                        </h3>
+                        <h4><em>
+                            <?php echo $post['author'] ?>
+                        </em></h4>
+                        <p>
+                            <?php echo $post['text'] ?>
+                        </p>
                     </li>
-                    <?php }?>
                 <?php } ?>
             </ul>
         <?php } ?>
