@@ -35,22 +35,12 @@ $db = [
     </head>
     <body>
         <?php foreach($db as $key => $array) {?>
-            <?php if($key == 'teachers') { ?>
-                <div class="gray">
+                <div class="<?= $key ?>">
                     <h2><?php echo $key; ?></h2>  
                     <?php foreach($array as $element) {?>
                         <p><?php echo "{$element['name']} {$element['lastname']}"; ?></p>
                     <?php }; ?>     
                 </div>
-            <?php }; ?>
-            <?php if($key == 'pm') { ?>
-                <div class="green">
-                    <h2><?php echo $key; ?></h2>  
-                    <?php foreach($array as $element) {?>
-                        <p><?php echo "{$element['name']} {$element['lastname']}"; ?></p>
-                    <?php }; ?>     
-                </div>
-            <?php }; ?>
         <?php }; ?>
     </body>
 </html>
