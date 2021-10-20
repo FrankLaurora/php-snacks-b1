@@ -57,14 +57,14 @@ $posts = [
                     <?php foreach($post as $key => $value) { ?>
                         <li>
                             <?php if($key == 'title') { ?>
-                            <h4>
+                            <h3>
                                 <?php echo $value ?>
-                            </h4>
+                            </h3>
                             <?php } ?>
                             <?php if($key == 'author') { ?>
-                            <h3><em>
+                            <h4><em>
                                 <?php echo $value ?>
-                            </em></h3>
+                            </em></h4>
                             <?php } ?>
                             <?php if($key == 'text') { ?>
                             <p>
