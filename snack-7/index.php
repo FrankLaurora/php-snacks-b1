@@ -1,25 +1,25 @@
-<!-- Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
+<!-- Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno avrà Nome, lastName e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
 
 <?php
 $students = [
     [
-        "nome" => "Donald",
-        "cognome" => "Duck",
+        "firstName" => "Donald",
+        "lastName" => "Duck",
         "marks" => [rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10)]
     ],
     [
-        "nome" => "Mickey",
-        "cognome" => "Mouse",
+        "firstName" => "Mickey",
+        "lastName" => "Mouse",
         "marks" => [rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10)]
     ],
     [
-        "nome" => "Scrooge",
-        "cognome" => "McDuck",
+        "firstName" => "Scrooge",
+        "lastName" => "McDuck",
         "marks" => [rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10)]
     ],
     [
-        "nome" => "Beagle",
-        "cognome" => "Boys",
+        "firstName" => "Beagle",
+        "lastName" => "Boys",
         "marks" => [rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10), rand(0, 10)]
     ]
 ];
@@ -41,7 +41,7 @@ function average($sum, $count) {
         <?php foreach($students as $student) {?>
             <ul>
                 <li>
-                    <h2><?php echo "{$student['nome']} {$student['cognome']}"?></h2>
+                    <h2><?php echo "{$student['firstName']} {$student['lastName']}"?></h2>
                     <h3>Media voti: 
                         <?php 
                             $sum = 0;
